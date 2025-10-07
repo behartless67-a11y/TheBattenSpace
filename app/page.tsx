@@ -1,103 +1,154 @@
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
+import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
+import { FeaturedServiceTile } from '@/components/service-tile';
+import { services } from '@/data/services';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function Home() {
+  const featuredServices = services.filter((s) => s.type === 'featured');
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="min-h-screen bg-background relative">
+      {/* Background Image */}
+      <div className="fixed inset-0 -z-10 opacity-30">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/garrett-hall-sunset.jpg"
+          alt="Garrett Hall at sunset"
+          fill
+          className="object-cover"
+          quality={85}
           priority
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <Header />
+
+      <main className="w-full max-w-7xl mx-auto px-8 py-8">
+        {/* Hero Section */}
+        <div className="mb-12 text-center">
+          <h1 className="text-5xl font-bold mb-4 text-primary">Batten Digital Commons</h1>
+          <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Your central hub for resources, tools, and information at the Frank Batten School of
+            Leadership and Public Policy
+          </p>
+
+          {/* Department Navigation */}
+          <nav className="flex flex-wrap items-center justify-center gap-4 mt-8">
+            <Link
+              href="/"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Home
+            </Link>
+            <Link
+              href="/news"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              News
+            </Link>
+            <Link
+              href="/staff-directory"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Staff Directory
+            </Link>
+            <Link
+              href="/academics"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Academics
+            </Link>
+            <Link
+              href="/admissions"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Admissions
+            </Link>
+            <Link
+              href="/career-services"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Career Services
+            </Link>
+            <Link
+              href="/marcom"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              MarCom
+            </Link>
+            <Link
+              href="/faculty"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Faculty
+            </Link>
+            <Link
+              href="/finance"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Finance
+            </Link>
+            <Link
+              href="/student-services"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Student Services
+            </Link>
+            <Link
+              href="/it-operations"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              IT and Operations
+            </Link>
+            <Link
+              href="/teaching"
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-card/95 backdrop-blur-sm border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+            >
+              Teaching
+            </Link>
+          </nav>
+        </div>
+
+        <div className="mb-12">
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold text-primary mb-2">Services</h2>
+            <div className="w-16 h-1 bg-accent"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredServices.map((service) => (
+              <FeaturedServiceTile key={service.id} service={service} />
+            ))}
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      {/* Upcoming Events Section */}
+      <div className="w-full bg-accent text-white py-12">
+        <div className="max-w-7xl mx-auto px-8">
+          <h2 className="text-2xl font-bold mb-6">Upcoming Events</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h3 className="font-semibold mb-2">Bridge to Batten Info Session and Application Launch</h3>
+              <p className="text-sm opacity-90">Tuesday, October 7, 2025 at 12:00 PM</p>
+              <p className="text-sm opacity-90">Newcomb Hall (Student Center)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-2">BSLIP General Body Meeting and Policy Trivia Night</h3>
+              <p className="text-sm opacity-90">Wednesday, October 8, 2025 at 7:00 PM</p>
+              <p className="text-sm opacity-90">Garrett Hall</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-2">Lunch with Tim Kaine&apos;s Chief of Staff, Mike Henry</h3>
+              <p className="text-sm opacity-90">Thursday, October 9, 2025 at 12:00 PM</p>
+              <p className="text-sm opacity-90">Batten School</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
