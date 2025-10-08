@@ -7,6 +7,7 @@ interface ServiceTileProps {
   service: ServiceTileType;
 }
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 const getIcon = (iconName: string) => {
   const iconKey = iconName
     .split('-')
@@ -15,7 +16,8 @@ const getIcon = (iconName: string) => {
     )
     .join('');
 
-  return ((Icons as unknown) as Record<string, typeof Icons.Box>)[iconKey] || Icons.Box;
+  const IconsRecord = Icons as any;
+  return IconsRecord[iconKey] || Icons.Box;
 };
 
 export function FeaturedServiceTile({ service }: ServiceTileProps) {
