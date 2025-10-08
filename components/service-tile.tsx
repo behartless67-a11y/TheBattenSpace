@@ -24,20 +24,22 @@ export function FeaturedServiceTile({ service }: ServiceTileProps) {
 
   return (
     <Link href={service.href} className="group">
-      <Card className="h-full transition-all duration-200 hover:shadow-lg hover:border-primary/50 hover:-translate-y-1 relative overflow-hidden">
+      <Card className="h-full transition-all duration-300 border-2 border-primary shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_8px_24px_rgba(35,45,75,0.6)] hover:-translate-y-2 hover:scale-105 relative overflow-hidden">
         {service.image && (
           <div
-            className="absolute inset-0 opacity-20 bg-cover bg-center"
+            className="absolute inset-0 opacity-20 bg-cover bg-center group-hover:opacity-30 transition-opacity duration-300"
             style={{ backgroundImage: `url(${service.image})` }}
           />
         )}
-        <CardHeader className="pb-4 relative z-10">
-          <div className="w-16 h-16 mb-4 rounded-xl bg-accent/90 flex items-center justify-center group-hover:bg-accent transition-colors">
-            <Icon className="w-8 h-8 text-white" strokeWidth={1.5} />
+        {/* UVA Blue Overlay */}
+        <div className="absolute inset-0 bg-primary/50 z-0"></div>
+        <CardHeader className="pb-3 pt-4 px-4 relative z-10">
+          <div className="w-12 h-12 mb-3 rounded-xl bg-accent/90 flex items-center justify-center group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
+            <Icon className="w-6 h-6 text-white" strokeWidth={1.5} />
           </div>
-          <CardTitle className="text-lg font-semibold">{service.title}</CardTitle>
+          <CardTitle className="text-base font-semibold group-hover:text-primary transition-colors duration-300 mb-2">{service.title}</CardTitle>
           {service.description && (
-            <CardDescription className="text-sm text-muted-foreground">
+            <CardDescription className="text-xs text-foreground">
               {service.description}
             </CardDescription>
           )}

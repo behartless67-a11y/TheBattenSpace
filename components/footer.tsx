@@ -18,8 +18,16 @@ export function Footer() {
   const quickLinks = services.filter((s) => s.type === 'quick-link');
 
   return (
-    <footer className="w-full bg-primary text-primary-foreground">
-      <div className="max-w-7xl mx-auto px-8 py-12">
+    <footer
+      className="w-full text-primary-foreground relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/uva-grounds.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+      <div className="absolute inset-0 bg-primary/80"></div>
+      <div className="max-w-7xl mx-auto px-8 py-12 relative z-10">
         <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {quickLinks.map((link) => {

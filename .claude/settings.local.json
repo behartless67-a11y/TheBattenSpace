@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(curl -o public/uva-rotunda.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/UVa_Lawn_and_Rotunda_from_High_St.JPG/1920px-UVa_Lawn_and_Rotunda_from_High_St.JPG\")",
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
