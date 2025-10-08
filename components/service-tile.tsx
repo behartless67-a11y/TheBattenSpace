@@ -15,7 +15,7 @@ const getIcon = (iconName: string) => {
     )
     .join('');
 
-  return (Icons as any)[iconKey] || Icons.Box;
+  return (Icons as Record<string, typeof Icons.Box>)[iconKey] || Icons.Box;
 };
 
 export function FeaturedServiceTile({ service }: ServiceTileProps) {

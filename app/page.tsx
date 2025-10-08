@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { FeaturedServiceTile } from '@/components/service-tile';
 import { UpcomingEvents } from '@/components/upcoming-events';
 import { NewsSlideshow } from '@/components/news-slideshow';
 import { services } from '@/data/services';
