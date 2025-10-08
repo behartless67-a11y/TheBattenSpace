@@ -1,0 +1,123 @@
+import { ServiceTile } from '@/types';
+
+export const services: ServiceTile[] = [
+  // Featured Services (illustrated cards)
+  {
+    id: 'room-reservations',
+    title: 'Room Reservations',
+    description: 'Book meeting rooms and spaces',
+    href: 'https://roomres.thebattenspace.org/',
+    type: 'featured',
+    icon: 'calendar-check',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+  },
+  {
+    id: 'email-lists',
+    title: 'Email Lists',
+    description: 'Manage distribution lists',
+    href: '/email-lists',
+    type: 'featured',
+    icon: 'mail',
+    image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&q=80',
+  },
+
+  // Quick Links (alphabetical order)
+  {
+    id: 'strategic-plan',
+    title: 'Batten 2030 Strategic Plan',
+    href: 'https://2030.batten.virginia.edu/',
+    type: 'quick-link',
+    icon: 'target',
+  },
+  {
+    id: 'batten-website',
+    title: 'Batten Website',
+    href: 'https://batten.virginia.edu',
+    type: 'quick-link',
+    icon: 'globe',
+  },
+  {
+    id: 'retention',
+    title: 'Document Retention Schedule',
+    href: '/resources/retention',
+    type: 'quick-link',
+    icon: 'archive',
+  },
+  {
+    id: 'emergency-plan',
+    title: 'Garrett Hall Emergency Action Plan',
+    href: '/resources/emergency-plan',
+    type: 'quick-link',
+    icon: 'shield-alert',
+  },
+  {
+    id: 'it-support',
+    title: 'IT Support',
+    href: 'mailto:battensupport@virginia.edu',
+    type: 'quick-link',
+    icon: 'headset',
+  },
+  {
+    id: 'onboarding',
+    title: 'Onboarding Resources',
+    href: '/onboarding',
+    type: 'quick-link',
+    icon: 'users-round',
+  },
+  {
+    id: 'org-chart',
+    title: 'Org Chart',
+    href: '/resources/org-chart',
+    type: 'quick-link',
+    icon: 'network',
+  },
+  {
+    id: 'uva-alerts',
+    title: 'Sign Up for UVA Alerts',
+    href: 'https://emergency.virginia.edu/sign-uva-alerts',
+    type: 'quick-link',
+    icon: 'bell',
+  },
+  {
+    id: 'staff-meetings',
+    title: 'Staff Meeting Docs',
+    href: '/services/staff-meetings',
+    type: 'quick-link',
+    icon: 'folder-open',
+  },
+  {
+    id: 'staff-support',
+    title: 'Staff Support Guide',
+    href: '/resources/staff-support',
+    type: 'quick-link',
+    icon: 'book-open',
+  },
+  {
+    id: 'systems-docs',
+    title: 'Systems and Process Documentation',
+    href: '/resources/systems-docs',
+    type: 'quick-link',
+    icon: 'file-text',
+  },
+  {
+    id: 'directory',
+    title: 'UVA Batten Internal Directory of Faculty and Research Staff',
+    href: '/resources/directory',
+    type: 'quick-link',
+    icon: 'users',
+  },
+  {
+    id: 'student-rights',
+    title: 'UVA Student Rights',
+    href: 'https://uvapolicy.virginia.edu/policy/STU-001',
+    type: 'quick-link',
+    icon: 'scale',
+  },
+  {
+    id: 'workday',
+    title: 'UVA Workday',
+    href: 'https://workday.virginia.edu',
+    type: 'quick-link',
+    icon: 'briefcase',
+  },
+];

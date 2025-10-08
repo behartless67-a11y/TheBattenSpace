@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { FeaturedServiceTile } from '@/components/service-tile';
 import { UpcomingEvents } from '@/components/upcoming-events';
 import { NewsSlideshow } from '@/components/news-slideshow';
 import { services } from '@/data/services';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function Home() {
   const featuredServices = services.filter((s) => s.type === 'featured');
@@ -40,76 +38,76 @@ export default function Home() {
 
           {/* Department Navigation */}
           <nav className="w-full py-4 mb-8">
-            <div className="flex items-center justify-center gap-2 overflow-x-auto scrollbar-hide flex-wrap">
+            <div className="flex items-center justify-center gap-2 px-4">
               <Link
                 href="/"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Home
               </Link>
               <Link
                 href="/news"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 News
               </Link>
               <Link
                 href="/staff-directory"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Staff Directory
               </Link>
               <Link
                 href="/academics"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Academics
               </Link>
               <Link
                 href="/admissions"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Admissions
               </Link>
               <Link
                 href="/career-services"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Career Services
               </Link>
               <Link
                 href="/marcom"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 MarCom
               </Link>
               <Link
                 href="/faculty"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Faculty
               </Link>
               <Link
                 href="/finance"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Finance
               </Link>
               <Link
                 href="/student-services"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Student Services
               </Link>
               <Link
                 href="/it-operations"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 IT and Operations
               </Link>
               <Link
                 href="/teaching"
-                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
               >
                 Teaching
               </Link>

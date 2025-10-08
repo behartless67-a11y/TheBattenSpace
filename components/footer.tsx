@@ -1,19 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
-import * as Icons from 'lucide-react';
-import { LucideIcon } from 'lucide-react';
-
-const getIcon = (iconName: string): LucideIcon => {
-  const iconKey = iconName
-    .split('-')
-    .map((word, index) =>
-      index === 0 ? word.charAt(0).toUpperCase() + word.slice(1) : word.charAt(0).toUpperCase() + word.slice(1)
-    )
-    .join('');
-
-  return (Icons as Record<string, LucideIcon>)[iconKey] || Icons.Box;
-};
 
 export function Footer() {
   const quickLinks = services.filter((s) => s.type === 'quick-link');
