@@ -5,7 +5,6 @@ import { FeaturedServiceTile } from '@/components/service-tile';
 import { UpcomingEvents } from '@/components/upcoming-events';
 import { NewsSlideshow } from '@/components/news-slideshow';
 import { services } from '@/data/services';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function Home() {
   const featuredServices = services.filter((s) => s.type === 'featured');

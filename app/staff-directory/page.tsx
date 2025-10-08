@@ -217,7 +217,7 @@ export default function StaffDirectory() {
         {filteredStaff.length === 0 && (
           <div className="text-center py-12">
             <p className="text-lg text-muted-foreground">
-              No staff members found matching "{searchQuery}"
+              No staff members found matching &quot;{searchQuery}&quot;
             </p>
           </div>
         )}
