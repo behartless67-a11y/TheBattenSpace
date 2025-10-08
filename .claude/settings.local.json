@@ -28,7 +28,8 @@
       "Bash(do cp \"$file\" \"batten-intranet/public/staff-photos/\")",
       "Bash(done)",
       "Bash(powershell:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(move app/page-backup.tsx app/home/page.tsx)"
     ],
     "deny": [],
     "ask": []

@@ -32,7 +32,7 @@ export default function Login() {
                 </p>
 
                 <Link
-                  href="#"
+                  href="/"
                   className="block w-full py-4 px-6 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
                 >
                   NetBadge Login
