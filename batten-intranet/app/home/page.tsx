@@ -3,10 +3,8 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { UpcomingEvents } from '@/components/upcoming-events';
 import { NewsSlideshow } from '@/components/news-slideshow';
-import { services } from '@/data/services';
 
 export default function Home() {
-  const featuredServices = services.filter((s) => s.type === 'featured');
 
   return (
     <div className="min-h-screen relative">
@@ -38,76 +36,88 @@ export default function Home() {
 
           {/* Department Navigation */}
           <nav className="w-full py-4 mb-8">
-            <div className="flex items-center justify-center gap-2 px-4">
+            <div className="flex items-center justify-center gap-4 px-4 flex-wrap">
               <Link
-                href="/"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                href="https://roomres.thebattenspace.org/"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
-                Home
+                Room Reservations
               </Link>
               <Link
-                href="/news"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                href="/email-lists"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
-                News
+                Email Lists
               </Link>
               <Link
                 href="/staff-directory"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Staff Directory
               </Link>
               <Link
                 href="/academics"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Academics
               </Link>
               <Link
                 href="/admissions"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Admissions
               </Link>
               <Link
                 href="/career-services"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Career Services
               </Link>
               <Link
                 href="/marcom"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 MarCom
               </Link>
               <Link
                 href="/faculty"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Faculty
               </Link>
               <Link
                 href="/finance"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Finance
               </Link>
               <Link
                 href="/student-services"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Student Services
               </Link>
               <Link
                 href="/it-operations"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 IT and Operations
               </Link>
               <Link
                 href="/teaching"
-                className="flex-shrink py-3 px-4 rounded-lg text-sm md:text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
               >
                 Teaching
               </Link>
@@ -137,91 +147,6 @@ export default function Home() {
           </div>
           <div className="h-[700px]">
             <NewsSlideshow />
-          </div>
-        </div>
-
-        {/* Services - Full Width Alternating Sections */}
-        <div className="mb-12 max-w-[1600px] mx-auto">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-primary mb-2">Services</h2>
-            <div className="w-16 h-1 bg-accent"></div>
-          </div>
-
-          {/* Room Reservations - Content on Right */}
-          <div className="mb-8 bg-background/95 backdrop-blur border-2 border-primary shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all rounded-2xl overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="relative h-64 md:h-auto bg-primary/10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
-                  <line x1="16" x2="16" y1="2" y2="6"/>
-                  <line x1="8" x2="8" y1="2" y2="6"/>
-                  <line x1="3" x2="21" y1="10" y2="10"/>
-                  <path d="m9 16 2 2 4-4"/>
-                </svg>
-              </div>
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold text-primary mb-4">Room Reservations</h3>
-                <p className="text-lg text-foreground mb-6">
-                  Easily book meeting rooms, conference spaces, and collaborative work areas in Garrett Hall. View real-time availability, check room amenities, and manage your reservations all in one place.
-                </p>
-                <div className="mb-6">
-                  <h4 className="font-semibold text-primary mb-2">Key Features:</h4>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                    <li>Real-time room availability</li>
-                    <li>View room capacity and amenities</li>
-                    <li>Manage recurring reservations</li>
-                    <li>Calendar integration</li>
-                  </ul>
-                </div>
-                <Link
-                  href="https://roomres.thebattenspace.org/"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg text-lg font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all"
-                >
-                  Book a Room
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
-                    <path d="M5 12h14"/>
-                    <path d="m12 5 7 7-7 7"/>
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Email Lists - Content on Left */}
-          <div className="mb-8 bg-background/95 backdrop-blur border-2 border-primary shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all rounded-2xl overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="p-8 flex flex-col justify-center order-2 md:order-1">
-                <h3 className="text-3xl font-bold text-primary mb-4">Email Lists</h3>
-                <p className="text-lg text-foreground mb-6">
-                  Manage and access all Batten School email distribution lists. Subscribe to relevant lists, update your preferences, and stay connected with your teams, departments, and working groups.
-                </p>
-                <div className="mb-6">
-                  <h4 className="font-semibold text-primary mb-2">What You Can Do:</h4>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                    <li>View all available email lists</li>
-                    <li>Subscribe or unsubscribe from lists</li>
-                    <li>Find department and team lists</li>
-                    <li>Access list descriptions and purposes</li>
-                  </ul>
-                </div>
-                <Link
-                  href="/email-lists"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg text-lg font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all"
-                >
-                  Manage Email Lists
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
-                    <path d="M5 12h14"/>
-                    <path d="m12 5 7 7-7 7"/>
-                  </svg>
-                </Link>
-              </div>
-              <div className="relative h-64 md:h-auto bg-primary/10 flex items-center justify-center order-1 md:order-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                  <rect width="20" height="16" x="2" y="4" rx="2"/>
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                </svg>
-              </div>
-            </div>
           </div>
         </div>
       </main>

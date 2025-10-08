@@ -3,76 +3,88 @@ import Link from 'next/link';
 export function DepartmentNav() {
   return (
     <nav className="w-full py-4 mb-8 overflow-x-auto">
-      <div className="flex items-center justify-center gap-2 px-4 min-w-max">
+      <div className="flex items-center justify-center gap-4 px-4 min-w-max flex-wrap">
         <Link
-          href="/home"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          href="https://roomres.thebattenspace.org/"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
-          Home
+          Room Reservations
         </Link>
         <Link
-          href="/news"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          href="/email-lists"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
-          News
+          Email Lists
         </Link>
         <Link
           href="/staff-directory"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Staff Directory
         </Link>
         <Link
           href="/academics"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Academics
         </Link>
         <Link
           href="/admissions"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Admissions
         </Link>
         <Link
           href="/career-services"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Career Services
         </Link>
         <Link
           href="/marcom"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           MarCom
         </Link>
         <Link
           href="/faculty"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Faculty
         </Link>
         <Link
           href="/finance"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Finance
         </Link>
         <Link
           href="/student-services"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Student Services
         </Link>
         <Link
           href="/it-operations"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           IT and Operations
         </Link>
         <Link
           href="/teaching"
-          className="flex-shrink-0 py-3 px-3 rounded-lg text-xs md:text-sm font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center whitespace-nowrap"
+          className="flex-shrink-0 text-xs md:text-sm font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
+          style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           Teaching
         </Link>

@@ -91,7 +91,7 @@ export default function WiFiSetup() {
               <h3 className="font-bold text-primary mb-4">Connection Steps:</h3>
               <ol className="space-y-3 text-muted-foreground mb-6 list-decimal list-inside">
                 <li>Open WiFi settings on your computer</li>
-                <li>Select "UVA" network from available networks</li>
+                <li>Select &quot;UVA&quot; network from available networks</li>
                 <li>Enter your UVA Computing ID</li>
                 <li>Enter your UVA password</li>
                 <li>Accept the security certificate if prompted</li>
@@ -127,7 +127,7 @@ export default function WiFiSetup() {
               <h3 className="font-bold text-primary mb-4">Connection Steps:</h3>
               <ol className="space-y-3 text-muted-foreground mb-6 list-decimal list-inside">
                 <li>Open WiFi settings on your device</li>
-                <li>Select "UVA" network</li>
+                <li>Select &quot;UVA&quot; network</li>
                 <li>Enter your UVA Computing ID</li>
                 <li>Enter your UVA password</li>
                 <li>Trust the certificate when prompted</li>

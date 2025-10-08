@@ -60,7 +60,7 @@ export default function PrintingSetup() {
               <h3 className="font-bold text-primary mb-4">Installation Steps:</h3>
               <ol className="space-y-3 text-muted-foreground mb-6 list-decimal list-inside">
                 <li>Open Settings → Printers & Scanners</li>
-                <li>Click "Add printer or scanner"</li>
+                <li>Click &quot;Add printer or scanner&quot;</li>
                 <li>Select network printer by IP or name</li>
                 <li>Install appropriate drivers</li>
                 <li>Set as default printer (optional)</li>
@@ -70,7 +70,7 @@ export default function PrintingSetup() {
                 <p className="text-sm font-semibold text-primary mb-2">Common Issues:</p>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Driver not found: Download from manufacturer</li>
-                  <li>• Can't find printer: Check network connection</li>
+                  <li>• Can&apos;t find printer: Check network connection</li>
                   <li>• Print jobs stuck: Clear print queue</li>
                 </ul>
               </div>

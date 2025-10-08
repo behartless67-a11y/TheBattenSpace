@@ -14,16 +14,17 @@ export function UpcomingEvents() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch directly from Trumba calendars
-    // Note: This requires CORS to be enabled on the calendar URLs
-    // For now, we'll use a fallback with empty arrays if fetch fails
     const fetchEvents = async () => {
       try {
-        // In production, you would fetch from the actual ICS URLs via a CORS proxy
-        // or configure your Azure Static Web App to proxy these requests
-        // For now, we'll set empty arrays
-        setEvents([]);
-        setKeyDates([]);
+        const response = await fetch('/api/events');
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch events');
+        }
+
+        const data = await response.json();
+        setEvents(data.upcomingEvents || []);
+        setKeyDates(data.keyDates || []);
         setLoading(false);
       } catch (error) {
         console.error('Error loading events:', error);
