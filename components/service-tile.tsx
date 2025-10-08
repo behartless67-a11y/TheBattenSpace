@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ServiceTile as ServiceTileType } from '@/types';
 import { LucideIcon } from 'lucide-react';
 import * as Icons from 'lucide-react';
