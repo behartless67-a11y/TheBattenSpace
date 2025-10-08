@@ -73,9 +73,9 @@ export function UpcomingEvents() {
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
           {allEvents.map((event, index) => (
-            <div key={index} className="pb-6 border-b-2 border-white/40 h-full">
-              <h4 className="font-bold mb-3 text-lg leading-tight">{event.title}</h4>
-              <p className="text-base font-semibold opacity-90">
+            <div key={index} className="pb-6 border-b-2 border-white/40 h-full flex flex-col">
+              <h4 className="font-bold mb-3 text-lg leading-tight flex-grow">{event.title}</h4>
+              <p className="text-base font-semibold opacity-90 whitespace-nowrap">
                 {formatDate(event.start)} • {formatTime(event.start)}
               </p>
             </div>
