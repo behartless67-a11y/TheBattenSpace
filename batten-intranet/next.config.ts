@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  output: 'export',
   images: {
+    unoptimized: true,
     qualities: [75, 85, 90, 100],
   },
 };
