@@ -1,14 +1,13 @@
 import Link from 'next/link';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ServiceTile as ServiceTileType } from '@/types';
-import { LucideIcon } from 'lucide-react';
 import * as Icons from 'lucide-react';
 
 interface ServiceTileProps {
   service: ServiceTileType;
 }
 
-const getIcon = (iconName: string): LucideIcon => {
+const getIcon = (iconName: string) => {
   const iconKey = iconName
     .split('-')
     .map((word, index) =>
@@ -16,7 +15,7 @@ const getIcon = (iconName: string): LucideIcon => {
     )
     .join('');
 
-  return (Icons as Record<string, LucideIcon>)[iconKey] || Icons.Box;
+  return (Icons as any)[iconKey] || Icons.Box;
 };
 
 export function FeaturedServiceTile({ service }: ServiceTileProps) {
