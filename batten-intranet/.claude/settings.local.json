@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(curl -o public/uva-rotunda.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/UVa_Lawn_and_Rotunda_from_High_St.JPG/1920px-UVa_Lawn_and_Rotunda_from_High_St.JPG\")",
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nMajor UI enhancements and feature additions\n\n- Enhanced navigation with UVA branding (blue borders, orange accents, drop shadows)\n- Moved department navigation to header for site-wide access\n- Added grayscale background image with 20% opacity overlay\n- Implemented page load animations (fade-in, slide-up effects)\n- Created news slideshow with text/image split layout and manual navigation\n- Replaced service cards with clean icon-only grid layout\n- Added floating social media buttons (Facebook, Instagram, LinkedIn)\n- Created email lists subpage with card layout\n- Added live calendar integration for upcoming events using ICS feed\n- Expanded page width to 1600px for better content display\n- Added AI chat search box below hero section\n- Applied UVA images with color overlays to events and footer sections\n- Updated room reservations link to external URL\n- Increased title size and added proper spacing\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd onboarding/offboarding page and footer improvements\n\n- Created comprehensive onboarding and offboarding process page\n- Added 10-field onboarding form with validation (employee info, managers, access needs)\n- Included step-by-step process guides for both onboarding and offboarding\n- Updated footer to remove ''Quick Links'' heading and display links in single row\n- Expanded footer width to 1600px for better alignment\n- Updated onboarding service link to point to new /onboarding page\n- Form includes text inputs, date picker, radio buttons for yes/no questions\n- Added email links to battensupport@virginia.edu for offboarding notifications\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(taskkill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

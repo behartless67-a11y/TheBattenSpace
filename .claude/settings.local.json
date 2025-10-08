@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial Batten Digital Commons intranet implementation\n\n- Next.js 14 with TypeScript and Tailwind CSS\n- UVA branding (navy blue and orange colors)\n- Adobe Caslon-inspired serif typography (Libre Baskerville)\n- Service tiles with background images\n- Department navigation pills\n- Weather widget in header\n- Orange upcoming events section\n- Navy blue footer with quick links\n- Garrett Hall sunset background image\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(cat:*)",
+      "Bash(git commit:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(curl http://localhost:3000/api/events)",
+      "Bash(curl:*)",
+      "Bash(git config:*)",
+      "Bash(git branch:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
