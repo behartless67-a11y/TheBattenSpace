@@ -217,7 +217,7 @@ export default function PrintingSetup() {
           <div className="bg-background/95 backdrop-blur border-2 border-primary shadow-[0_4px_12px_rgba(35,45,75,0.4)] rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-primary mb-4">Need Help?</h3>
             <p className="text-muted-foreground mb-6">
-              If you're still having trouble setting up your printer or experiencing issues, our IT team is here to help.
+              If you&apos;re still having trouble setting up your printer or experiencing issues, our IT team is here to help.
             </p>
             <div className="space-y-3">
               <a
