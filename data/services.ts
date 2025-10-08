@@ -51,7 +51,7 @@ export const services: ServiceTile[] = [
     id: 'strategic-plan',
     title: 'Batten 2030 Strategic Plan',
     description: 'Long-term strategic goals',
-    href: '/services/strategic-plan',
+    href: 'https://2030.batten.virginia.edu/',
     type: 'featured',
     icon: 'target',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',

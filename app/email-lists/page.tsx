@@ -189,6 +189,84 @@ export default function EmailLists() {
               Mailing List Owners and Moderators.xlsx
             </a>
           </p>
+
+          {/* Department Navigation */}
+          <nav className="w-full py-4 mt-8">
+            <div className="flex items-center justify-center gap-2 overflow-x-auto scrollbar-hide flex-wrap">
+              <Link
+                href="/"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Home
+              </Link>
+              <Link
+                href="/news"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                News
+              </Link>
+              <Link
+                href="/staff-directory"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Staff Directory
+              </Link>
+              <Link
+                href="/academics"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Academics
+              </Link>
+              <Link
+                href="/admissions"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Admissions
+              </Link>
+              <Link
+                href="/career-services"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Career Services
+              </Link>
+              <Link
+                href="/marcom"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                MarCom
+              </Link>
+              <Link
+                href="/faculty"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Faculty
+              </Link>
+              <Link
+                href="/finance"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Finance
+              </Link>
+              <Link
+                href="/student-services"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Student Services
+              </Link>
+              <Link
+                href="/it-operations"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                IT and Operations
+              </Link>
+              <Link
+                href="/teaching"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Teaching
+              </Link>
+            </div>
+          </nav>
         </div>
 
         {/* Email Lists Grid */}
@@ -200,7 +278,16 @@ export default function EmailLists() {
             >
               <CardHeader>
                 <CardTitle className="text-lg font-semibold text-primary flex items-start justify-between gap-2">
-                  <span className="break-all">{list.name}</span>
+                  {list.name.includes('@virginia.edu') ? (
+                    <a
+                      href={`mailto:?bcc=${list.name}`}
+                      className="break-all hover:text-accent transition-colors underline"
+                    >
+                      {list.name}
+                    </a>
+                  ) : (
+                    <span className="break-all">{list.name}</span>
+                  )}
                   {list.note && (
                     <span className="text-xs font-normal text-muted-foreground whitespace-nowrap">
                       {list.note}

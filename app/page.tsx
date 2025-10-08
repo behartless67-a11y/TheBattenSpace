@@ -33,13 +33,91 @@ export default function Home() {
         <div className="mb-12 text-center mt-12">
           <h1 className="text-8xl font-bold mb-4 text-primary animate-fade-in-up whitespace-nowrap">Batten Digital Commons</h1>
           <div className="w-24 h-1 bg-accent mx-auto mb-6 animate-fade-in-up animation-delay-200"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-400">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-400 mb-8">
             Your central hub for resources, tools, and information at the Frank Batten School of
             Leadership and Public Policy
           </p>
 
+          {/* Department Navigation */}
+          <nav className="w-full py-4 mb-8">
+            <div className="flex items-center justify-center gap-2 overflow-x-auto scrollbar-hide flex-wrap">
+              <Link
+                href="/"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Home
+              </Link>
+              <Link
+                href="/news"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                News
+              </Link>
+              <Link
+                href="/staff-directory"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Staff Directory
+              </Link>
+              <Link
+                href="/academics"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Academics
+              </Link>
+              <Link
+                href="/admissions"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Admissions
+              </Link>
+              <Link
+                href="/career-services"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Career Services
+              </Link>
+              <Link
+                href="/marcom"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                MarCom
+              </Link>
+              <Link
+                href="/faculty"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Faculty
+              </Link>
+              <Link
+                href="/finance"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Finance
+              </Link>
+              <Link
+                href="/student-services"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Student Services
+              </Link>
+              <Link
+                href="/it-operations"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                IT and Operations
+              </Link>
+              <Link
+                href="/teaching"
+                className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+              >
+                Teaching
+              </Link>
+            </div>
+          </nav>
+
           {/* AI Chat Box */}
-          <div className="mt-8 max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <div className="relative">
               <input
                 type="text"
@@ -115,10 +193,10 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-accent/80"></div>
         <div className="w-full px-8 relative z-10">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6">Upcoming Events</h2>
+          <div className="w-full">
+            <h2 className="text-3xl font-bold mb-8">Upcoming Events & Key Dates</h2>
           </div>
-          <div className="max-w-7xl mx-auto">
+          <div className="w-full">
             <UpcomingEvents />
           </div>
         </div>

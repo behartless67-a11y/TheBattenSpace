@@ -10,13 +10,17 @@ interface Event {
 
 export function UpcomingEvents() {
   const [events, setEvents] = useState<Event[]>([]);
+  const [keyDates, setKeyDates] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/events')
-      .then((res) => res.json())
-      .then((data) => {
-        setEvents(data);
+    Promise.all([
+      fetch('/api/events').then((res) => res.json()),
+      fetch('/api/key-dates').then((res) => res.json())
+    ])
+      .then(([eventsData, keyDatesData]) => {
+        setEvents(eventsData);
+        setKeyDates(keyDatesData);
         setLoading(false);
       })
       .catch((error) => {
@@ -33,7 +37,7 @@ export function UpcomingEvents() {
     );
   }
 
-  if (events.length === 0) {
+  if (events.length === 0 && keyDates.length === 0) {
     return (
       <div className="text-center py-8">
         <p className="text-white/70">No upcoming events</p>
@@ -44,10 +48,8 @@ export function UpcomingEvents() {
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', {
-      weekday: 'long',
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
+      month: 'short',
+      day: 'numeric'
     });
   };
 
@@ -60,19 +62,26 @@ export function UpcomingEvents() {
     });
   };
 
+  // Combine all events and sort by date
+  const allEvents = [...events, ...keyDates]
+    .sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {events.map((event, index) => (
-        <div key={index}>
-          <h3 className="font-semibold mb-2">{event.title}</h3>
-          <p className="text-sm opacity-90">
-            {formatDate(event.start)} at {formatTime(event.start)}
-          </p>
-          {event.location && (
-            <p className="text-sm opacity-90">{event.location}</p>
-          )}
+    <div className="w-full">
+      {allEvents.length === 0 ? (
+        <p className="text-white/70">No upcoming events</p>
+      ) : (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+          {allEvents.map((event, index) => (
+            <div key={index} className="pb-6 border-b-2 border-white/40 h-full">
+              <h4 className="font-bold mb-3 text-lg leading-tight">{event.title}</h4>
+              <p className="text-base font-semibold opacity-90">
+                {formatDate(event.start)} • {formatTime(event.start)}
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
+      )}
     </div>
   );
 }

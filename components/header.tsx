@@ -6,10 +6,10 @@ export function Header() {
   return (
     <>
       <SocialMediaButtons />
-      <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="w-full flex flex-col">
         {/* Top bar */}
-        <div className="flex h-16 items-center px-8">
+        <div className="flex h-16 items-center px-8 border-b border-border">
           <div className="flex items-center gap-6 flex-1">
             <Link href="/" className="flex items-center gap-3">
               <div className="flex items-center gap-3">
@@ -34,86 +34,14 @@ export function Header() {
             <div className="text-sm text-muted-foreground">
               Welcome, <span className="font-medium text-foreground">User</span>
             </div>
+            <Link
+              href="/login"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Logout
+            </Link>
           </div>
         </div>
-
-        {/* Department Navigation */}
-        <nav className="w-full border-t border-border py-2 px-4 bg-background/98">
-          <div className="flex items-center justify-center gap-2 overflow-x-auto scrollbar-hide">
-            <Link
-              href="/"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Home
-            </Link>
-            <Link
-              href="/news"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              News
-            </Link>
-            <Link
-              href="/staff-directory"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Staff Directory
-            </Link>
-            <Link
-              href="/academics"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Academics
-            </Link>
-            <Link
-              href="/admissions"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Admissions
-            </Link>
-            <Link
-              href="/career-services"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Career Services
-            </Link>
-            <Link
-              href="/marcom"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              MarCom
-            </Link>
-            <Link
-              href="/faculty"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Faculty
-            </Link>
-            <Link
-              href="/finance"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Finance
-            </Link>
-            <Link
-              href="/student-services"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Student Services
-            </Link>
-            <Link
-              href="/it-operations"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              IT and Operations
-            </Link>
-            <Link
-              href="/teaching"
-              className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-card/95 backdrop-blur-sm border-2 border-accent/30 hover:border-accent hover:bg-accent/10 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all whitespace-nowrap"
-            >
-              Teaching
-            </Link>
-          </div>
-        </nav>
       </div>
     </header>
     </>
