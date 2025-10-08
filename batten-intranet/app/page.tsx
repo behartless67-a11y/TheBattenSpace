@@ -1,6 +1,23 @@
-import Link from 'next/link';
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const [passcode, setPasscode] = useState('');
+  const [error, setError] = useState(false);
+  const router = useRouter();
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passcode === '000235') {
+      router.push('/home');
+    } else {
+      setError(true);
+      setPasscode('');
+    }
+  };
+
   return (
     <div className="min-h-screen relative">
       {/* Background Image */}
@@ -31,12 +48,31 @@ export default function Home() {
                   Leadership and Public Policy
                 </p>
 
-                <Link
-                  href="/home"
-                  className="block w-full py-4 px-6 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
-                >
-                  NetBadge Login
-                </Link>
+                <form onSubmit={handleLogin}>
+                  <input
+                    type="password"
+                    placeholder="Enter passcode"
+                    value={passcode}
+                    onChange={(e) => {
+                      setPasscode(e.target.value);
+                      setError(false);
+                    }}
+                    className={`w-full mb-4 px-6 py-4 rounded-lg border-2 ${
+                      error ? 'border-red-500' : 'border-primary'
+                    } shadow-[0_4px_12px_rgba(35,45,75,0.4)] focus:outline-none focus:border-accent focus:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all bg-background text-center`}
+                  />
+
+                  {error && (
+                    <p className="text-red-500 text-sm mb-4">Invalid passcode. Please try again.</p>
+                  )}
+
+                  <button
+                    type="submit"
+                    className="block w-full py-4 px-6 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
+                  >
+                    NetBadge Login
+                  </button>
+                </form>
 
                 <p className="text-xs text-center text-muted-foreground mt-4">
                   Use your UVA NetBadge credentials to access the Digital Commons

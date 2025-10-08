@@ -136,15 +136,6 @@ export const staffDirectory: StaffMember[] = [
     photo: "/staff-photos/Edunuri.png"
   },
   {
-    name: "Edwards, Emily Marie",
-    position: "Admissions Fellow",
-    biography: "Originally from Georgia, Admissions Fellow Emily Edwards is a 2024 graduate from Furman University. While at Furman, Emily double majored in Psychology and Anthropology.",
-    firstName: "Emily",
-    lastName: "Edwards",
-    phone: "434-982-0685",
-    photo: "/placeholder-staff.jpg"
-  },
-  {
     name: "Flattery, Sean Michael",
     position: "Assistant Director of Events and Operations",
     biography: "As assistant director of events and operations, Sean Michael supports the Batten School's mission by ensuring the efficient planning and execution of key events and daily operations.",
@@ -197,7 +188,7 @@ export const staffDirectory: StaffMember[] = [
     phone: "1-540-460-7676",
     building: "Garrett Hall – First Floor",
     officeNumber: "104",
-    photo: "/staff-photos/hartless.png"
+    photo: "/staff-photos/Hartless.png"
   },
   {
     name: "Henry, Andrea Marie",

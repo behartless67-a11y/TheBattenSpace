@@ -2,6 +2,7 @@
 
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { DepartmentNav } from '@/components/department-nav';
 import { staffDirectory } from '@/data/staff-directory';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -40,9 +41,10 @@ export default function StaffDirectory() {
         <div className="mb-8">
           <h1 className="text-5xl font-bold text-primary mb-4">Staff Directory</h1>
           <div className="w-24 h-1 bg-accent mb-6"></div>
-          <p className="text-lg text-muted-foreground max-w-3xl">
+          <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             Meet the dedicated team at the Frank Batten School of Leadership and Public Policy
           </p>
+          <DepartmentNav />
         </div>
 
         {/* Search Bar and View Toggle */}
@@ -98,7 +100,7 @@ export default function StaffDirectory() {
                 {/* Photo */}
                 <div className="relative w-full h-64 bg-muted">
                   <Image
-                    src={`/staff-photos/${staff.lastName.toLowerCase().replace(/\s+/g, '-')}.png`}
+                    src={staff.photo}
                     alt={staff.name}
                     fill
                     className="object-cover"
@@ -163,7 +165,7 @@ export default function StaffDirectory() {
                   {/* Avatar */}
                   <div className="flex-shrink-0 relative w-16 h-16">
                     <Image
-                      src={`/staff-photos/${staff.lastName.toLowerCase().replace(/\s+/g, '-')}.png`}
+                      src={staff.photo}
                       alt={staff.name}
                       fill
                       className="object-cover rounded-full"
