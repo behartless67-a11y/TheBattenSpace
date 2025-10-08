@@ -34,8 +34,17 @@ export async function GET() {
     const vevents = comp.getAllSubcomponents('vevent');
 
     const now = new Date();
+
+    interface EventData {
+      title: string;
+      start: Date;
+      end: Date;
+      location: string;
+      description: string;
+    }
+
     const upcomingEvents = vevents
-      .map((vevent: any) => {
+      .map((vevent) => {
         const event = new ICAL.Event(vevent);
         return {
           title: decodeHtmlEntities(event.summary || ''),
@@ -45,8 +54,8 @@ export async function GET() {
           description: decodeHtmlEntities(event.description || '')
         };
       })
-      .filter((event: any) => new Date(event.start) >= now)
-      .sort((a: any, b: any) => new Date(a.start).getTime() - new Date(b.start).getTime())
+      .filter((event: EventData) => new Date(event.start) >= now)
+      .sort((a: EventData, b: EventData) => new Date(a.start).getTime() - new Date(b.start).getTime())
       .slice(0, 6);
 
     return NextResponse.json(upcomingEvents);
