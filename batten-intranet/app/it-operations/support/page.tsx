@@ -118,7 +118,7 @@ export default function ITSupport() {
             <div className="border-l-4 border-accent pl-6">
               <h3 className="text-xl font-bold text-primary mb-2">Printer Not Working</h3>
               <p className="text-muted-foreground mb-2">
-                Can't print? Make sure your printer is properly configured using our setup guides for PC or Mac.
+                Can&apos;t print? Make sure your printer is properly configured using our setup guides for PC or Mac.
               </p>
               <Link href="/it-operations/printing" className="text-primary hover:text-accent font-semibold">
                 View Printing Setup →

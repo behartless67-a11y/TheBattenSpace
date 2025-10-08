@@ -187,7 +187,7 @@ export default function WiFiSetup() {
               </p>
               <ul className="text-sm text-muted-foreground space-y-1 ml-4">
                 <li>• Accept/trust the UVA certificate when prompted</li>
-                <li>• Verify certificate issuer is "InCommon RSA Server CA"</li>
+                <li>• Verify certificate issuer is &quot;InCommon RSA Server CA&quot;</li>
                 <li>• Update device operating system</li>
                 <li>• Remove old WiFi profiles and reconnect</li>
               </ul>
@@ -213,7 +213,7 @@ export default function WiFiSetup() {
           <div className="bg-background/95 backdrop-blur border-2 border-primary shadow-[0_4px_12px_rgba(35,45,75,0.4)] rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-primary mb-4">Guest WiFi</h3>
             <p className="text-muted-foreground mb-4">
-              Visitors can connect to "UVA-Guest" network for temporary internet access without UVA credentials.
+              Visitors can connect to &quot;UVA-Guest&quot; network for temporary internet access without UVA credentials.
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>• Open network (no password required)</li>

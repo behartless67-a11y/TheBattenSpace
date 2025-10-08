@@ -100,7 +100,7 @@ export default function PrintingSetup() {
               <h3 className="font-bold text-primary mb-4">Installation Steps:</h3>
               <ol className="space-y-3 text-muted-foreground mb-6 list-decimal list-inside">
                 <li>Open System Preferences → Printers & Scanners</li>
-                <li>Click "+" to add a printer</li>
+                <li>Click &quot;+&quot; to add a printer</li>
                 <li>Select from network printers list</li>
                 <li>macOS will download drivers automatically</li>
                 <li>Configure print options and defaults</li>
@@ -136,7 +136,7 @@ export default function PrintingSetup() {
                 <strong>Solution:</strong> Clear the print queue and restart the print spooler service.
               </p>
               <ul className="text-sm text-muted-foreground space-y-1 ml-4">
-                <li>• Windows: Open Services → Restart "Print Spooler"</li>
+                <li>• Windows: Open Services → Restart &quot;Print Spooler&quot;</li>
                 <li>• Mac: System Preferences → Printers → Reset printing system</li>
               </ul>
             </div>
@@ -144,7 +144,7 @@ export default function PrintingSetup() {
             <div className="border-l-4 border-accent pl-6">
               <h3 className="text-xl font-bold text-primary mb-2">Driver Installation Issues</h3>
               <p className="text-muted-foreground mb-2">
-                <strong>Solution:</strong> Download the latest drivers from the manufacturer's website.
+                <strong>Solution:</strong> Download the latest drivers from the manufacturer&apos;s website.
               </p>
               <ul className="text-sm text-muted-foreground space-y-1 ml-4">
                 <li>• Identify your printer model</li>
@@ -163,7 +163,7 @@ export default function PrintingSetup() {
                 <li>• Check if printer is powered on</li>
                 <li>• Verify network cable is connected (if wired)</li>
                 <li>• Ping the printer IP address</li>
-                <li>• Ensure you're on the correct network (not guest WiFi)</li>
+                <li>• Ensure you&apos;re on the correct network (not guest WiFi)</li>
               </ul>
             </div>
 
@@ -176,7 +176,7 @@ export default function PrintingSetup() {
                 <li>• Use your UVA Computing ID credentials</li>
                 <li>• Verify account has printing permissions</li>
                 <li>• Try removing and re-adding printer</li>
-                <li>• Contact IT if credentials don't work</li>
+                <li>• Contact IT if credentials don&apos;t work</li>
               </ul>
             </div>
           </div>

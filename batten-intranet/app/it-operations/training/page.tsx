@@ -268,7 +268,7 @@ export default function ITTraining() {
           <div className="bg-background/95 backdrop-blur border-2 border-primary shadow-[0_4px_12px_rgba(35,45,75,0.4)] rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-primary mb-4">Request a Topic</h3>
             <p className="text-muted-foreground mb-6">
-              Have a technology topic you'd like to learn more about? Suggest it for an upcoming BITS session!
+              Have a technology topic you&apos;d like to learn more about? Suggest it for an upcoming BITS session!
             </p>
             <a
               href="mailto:battensupport@virginia.edu?subject=BITS%20Topic%20Suggestion"
