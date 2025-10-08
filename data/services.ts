@@ -33,7 +33,7 @@ export const services: ServiceTile[] = [
     id: 'onboarding',
     title: 'Onboarding and Offboarding',
     description: 'Employee lifecycle management',
-    href: '/services/onboarding',
+    href: '/onboarding',
     type: 'featured',
     icon: 'users-round',
     image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80',

@@ -27,9 +27,8 @@ export function Footer() {
       }}
     >
       <div className="absolute inset-0 bg-primary/80"></div>
-      <div className="max-w-7xl mx-auto px-8 py-12 relative z-10">
-        <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="max-w-[1600px] mx-auto px-8 py-12 relative z-10">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
           {quickLinks.map((link) => {
             const isExternal = link.href.startsWith('http');
 
@@ -37,7 +36,7 @@ export function Footer() {
               <Link
                 key={link.id}
                 href={link.href}
-                className="text-sm hover:text-accent transition-colors"
+                className="text-sm hover:text-accent transition-colors whitespace-nowrap"
                 target={isExternal ? '_blank' : undefined}
                 rel={isExternal ? 'noopener noreferrer' : undefined}
               >
