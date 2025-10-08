@@ -39,8 +39,8 @@ export default function Home() {
           </p>
 
           {/* Department Navigation */}
-          <nav className="w-full py-4 mb-8">
-            <div className="flex items-center justify-center gap-2 overflow-x-auto scrollbar-hide flex-wrap">
+          <nav className="w-full py-4 mb-8 overflow-x-auto">
+            <div className="flex items-center justify-center gap-2 min-w-max mx-auto w-fit">
               <Link
                 href="/"
                 className="w-40 py-3 rounded-lg text-base font-semibold bg-primary text-white border-2 border-accent/30 hover:border-accent hover:bg-primary/90 shadow-[0_4px_12px_rgba(35,45,75,0.4)] hover:shadow-[0_6px_20px_rgba(35,45,75,0.6)] transition-all text-center"
