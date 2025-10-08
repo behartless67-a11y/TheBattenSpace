@@ -38,86 +38,74 @@ export default function Home() {
           <nav className="w-full py-4 mb-8">
             <div className="flex items-center justify-center gap-4 px-4 flex-wrap">
               <Link
-                href="https://roomres.thebattenspace.org/"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
-              >
-                Room Reservations
-              </Link>
-              <Link
-                href="/email-lists"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
-              >
-                Email Lists
-              </Link>
-              <Link
-                href="/staff-directory"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
-              >
-                Staff Directory
-              </Link>
-              <Link
                 href="/academics"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
                 Academics
               </Link>
               <Link
                 href="/admissions"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
                 Admissions
               </Link>
               <Link
                 href="/career-services"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
                 Career Services
               </Link>
               <Link
-                href="/marcom"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                href="/email-lists"
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
-                MarCom
+                Email Lists
               </Link>
               <Link
                 href="/faculty"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
                 Faculty
               </Link>
               <Link
                 href="/finance"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
                 Finance
               </Link>
               <Link
+                href="/it-operations"
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
+              >
+                IT & Operations
+              </Link>
+              <Link
+                href="/marcom"
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
+              >
+                MarCom
+              </Link>
+              <Link
+                href="https://roomres.thebattenspace.org/"
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
+              >
+                Room Reservations
+              </Link>
+              <Link
+                href="/staff-directory"
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
+              >
+                Staff Directory
+              </Link>
+              <Link
                 href="/student-services"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
                 Student Services
               </Link>
               <Link
-                href="/it-operations"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
-              >
-                IT and Operations
-              </Link>
-              <Link
                 href="/teaching"
-                className="flex-shrink-0 text-sm md:text-base font-bold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap"
-                style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                className="flex-shrink-0 text-base md:text-lg font-extrabold text-accent hover:text-accent/80 transition-all text-center whitespace-nowrap font-sans pl-4 border-l-2 border-accent first:border-l-0 first:pl-0"
               >
                 Teaching
               </Link>
