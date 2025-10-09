@@ -18,26 +18,34 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: '2',
-    title: 'Faculty Spotlight: Gerald Warburg Helps Batten School Grow Next Generation of Leaders',
-    excerpt: 'Gerald Warburg, a longtime professor at UVA&apos;s Batten School, has been instrumental in developing the school from its early days, helping to grow it from 25 students to hundreds and empowering young people to become effective leaders. Warburg received the prestigious 2024 All-University Teaching Award for his dedication to student mentorship and excellence in teaching.',
-    date: '2024-08-15',
-    image: '/news-warburg.jpg',
-    link: 'https://news.virginia.edu/content/faculty-spotlight-how-gerald-warburg-helping-batten-school-grow-next-generation-leaders'
+    title: 'UVA Basketball Returns: What to Know About the Hoos This Season',
+    excerpt: 'The UVA men&apos;s basketball team begins a new era under interim coach Ron Sanchez after Tony Bennett&apos;s retirement, while the women&apos;s team aims to reach the NCAA Tournament under coach Amaka "Mox" Agugua-Hamilton. No Tony Bennett, but intrigue and excitement abound as UVA begins a new hoops year this week.',
+    date: '2025-10-07',
+    image: '/news-basketball.jpg',
+    link: 'https://news.virginia.edu/content/basketball-season-returns-what-know-about-hoos-season'
   },
   {
     id: '3',
-    title: 'Batten School Helps Local Teens Explore Public Policy, Leadership',
-    excerpt: 'A summer program at UVA&apos;s Batten School introduced local high school students to public policy and leadership through interactive workshops and game design, helping them understand how policy affects their lives. Dozens of local high school students participated in the program, exploring how they can influence policy and make a difference in their communities.',
-    date: '2024-07-22',
-    image: '/news-teens.jpg',
-    link: 'https://news.virginia.edu/content/batten-school-helps-local-teens-explore-public-policy-leadership'
+    title: 'The Unplugged Classroom: No Midterms or Finals, Just Lots of Writing and Creativity',
+    excerpt: 'Psychology professor Jim Coan reimagines learning by eliminating traditional exams and focusing on handwritten, creative note-taking that promotes deeper engagement with course material. After 20 years at UVA, Coan is embracing a new approach for deeper learning. His students say it works.',
+    date: '2025-10-06',
+    image: '/news-unplugged.jpg',
+    link: 'https://news.virginia.edu/content/unplugged-classroom-no-midterms-or-finals-just-lots-writing-and-creativity'
   },
   {
     id: '4',
-    title: 'Fast-Growing Batten School Launches Five Dual Degree Programs',
-    excerpt: 'The Batten School at the University of Virginia has expanded its enrollment by introducing an inaugural graduate class of 22 students and creating five new dual-degree programs with partner schools. This expansion reflects the school&apos;s commitment to providing students with interdisciplinary training and preparing them for leadership roles in an increasingly complex policy landscape.',
-    date: '2024-06-10',
-    image: '/garrett-hall-sunset.jpg',
-    link: 'https://news.virginia.edu/content/fast-growing-batten-school-launches-five-dual-degree-programs-welcomes-first-post-graduate'
+    title: 'BOV Approves Design for New UVA Center for the Arts',
+    excerpt: 'The University of Virginia&apos;s Board of Visitors has approved the schematic design for a new 220,000-square-foot Center for the Arts, which will house performing arts, museum, and music facilities. The new center will unite museums, music and performance in a single hub on Grounds.',
+    date: '2025-10-02',
+    image: '/news-arts-center.jpg',
+    link: 'https://news.virginia.edu/content/bov-approves-design-new-uva-center-arts'
+  },
+  {
+    id: '5',
+    title: 'UVA Alumni Association Breaks Ground on Its New Home',
+    excerpt: 'The UVA Alumni Association is constructing a new 50,000-square-foot facility called Aggarwal Hall, named after its largest individual donor, Reggie Aggarwal. The new facility is expected to welcome alumni in spring 2027 and will serve as a central gathering place for the UVA community.',
+    date: '2025-10-01',
+    image: '/news-alumni.jpg',
+    link: 'https://news.virginia.edu/content/uva-alumni-association-breaks-ground-its-new-home'
   }
 ];
