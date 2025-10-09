@@ -10,34 +10,34 @@ export interface NewsItem {
 export const newsItems: NewsItem[] = [
   {
     id: '1',
-    title: 'Batten School Launches New Leadership Initiative',
-    excerpt: 'A groundbreaking program designed to develop the next generation of public policy leaders. The new initiative brings together experienced practitioners, academic scholars, and emerging leaders to collaborate on real-world policy challenges. Students will have the opportunity to work directly with government agencies, nonprofit organizations, and international institutions while developing critical leadership skills. The program emphasizes ethical decision-making, inclusive governance, and innovative approaches to solving complex societal problems.',
-    date: '2025-10-01',
-    image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80',
-    link: '/news/leadership-initiative'
+    title: 'UVA Presidential Search Committee Gets First Look at Initial Candidates',
+    excerpt: 'The special committee will narrow the candidate pool and schedule in-person interviews in late November. The search for UVA&apos;s next president continues as the committee reviews applications from leaders across academia and beyond, seeking someone who can guide the University through its next chapter of excellence and innovation.',
+    date: '2025-10-08',
+    image: '/news-presidential.jpg',
+    link: 'https://news.virginia.edu/content/uvas-presidential-search-committee-gets-first-look-initial-candidates'
   },
   {
     id: '2',
-    title: 'Students Win National Policy Competition',
-    excerpt: 'Batten MPP students take first place in prestigious national policy case competition. The team of five students presented a comprehensive policy proposal addressing urban housing affordability, impressing judges with their thorough research, innovative solutions, and compelling presentation. Their winning proposal combines zoning reform, public-private partnerships, and community engagement strategies to create sustainable, affordable housing options in rapidly growing cities. This victory marks the third consecutive year that Batten students have placed in the top three at this nationally recognized competition.',
-    date: '2025-09-28',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80',
-    link: '/news/policy-competition'
+    title: 'Faculty Spotlight: Gerald Warburg Helps Batten School Grow Next Generation of Leaders',
+    excerpt: 'Gerald Warburg, a longtime professor at UVA&apos;s Batten School, has been instrumental in developing the school from its early days, helping to grow it from 25 students to hundreds and empowering young people to become effective leaders. Warburg received the prestigious 2024 All-University Teaching Award for his dedication to student mentorship and excellence in teaching.',
+    date: '2024-08-15',
+    image: '/news-warburg.jpg',
+    link: 'https://news.virginia.edu/content/faculty-spotlight-how-gerald-warburg-helping-batten-school-grow-next-generation-leaders'
   },
   {
     id: '3',
-    title: 'Dean Announces Expansion of Research Centers',
-    excerpt: 'Three new research centers will focus on climate policy, democratic governance, and public health. The expansion represents a significant investment in addressing the most pressing challenges facing society today. Each center will bring together interdisciplinary teams of faculty, researchers, and practitioners to conduct rigorous analysis and develop evidence-based policy recommendations. The Climate Policy Center will examine pathways to carbon neutrality, the Democratic Governance Center will study threats to democratic institutions, and the Public Health Policy Center will address health equity and pandemic preparedness.',
-    date: '2025-09-25',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80',
-    link: '/news/research-centers'
+    title: 'Batten School Helps Local Teens Explore Public Policy, Leadership',
+    excerpt: 'A summer program at UVA&apos;s Batten School introduced local high school students to public policy and leadership through interactive workshops and game design, helping them understand how policy affects their lives. Dozens of local high school students participated in the program, exploring how they can influence policy and make a difference in their communities.',
+    date: '2024-07-22',
+    image: '/news-teens.jpg',
+    link: 'https://news.virginia.edu/content/batten-school-helps-local-teens-explore-public-policy-leadership'
   },
   {
     id: '4',
-    title: 'Distinguished Speaker Series Features Former Ambassador',
-    excerpt: 'Join us for an exclusive conversation on international diplomacy and global challenges. Ambassador Maria Rodriguez will share insights from her distinguished 30-year career in foreign service, including her experiences navigating complex international negotiations and building coalitions across cultural divides. The conversation will explore current challenges in global diplomacy, the future of multilateral cooperation, and advice for students interested in careers in international relations. This event is part of our Distinguished Speaker Series, which brings world-renowned leaders to engage directly with the Batten community.',
-    date: '2025-09-20',
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80',
-    link: '/news/speaker-series'
+    title: 'Fast-Growing Batten School Launches Five Dual Degree Programs',
+    excerpt: 'The Batten School at the University of Virginia has expanded its enrollment by introducing an inaugural graduate class of 22 students and creating five new dual-degree programs with partner schools. This expansion reflects the school&apos;s commitment to providing students with interdisciplinary training and preparing them for leadership roles in an increasingly complex policy landscape.',
+    date: '2024-06-10',
+    image: '/garrett-hall-sunset.jpg',
+    link: 'https://news.virginia.edu/content/fast-growing-batten-school-launches-five-dual-degree-programs-welcomes-first-post-graduate'
   }
 ];
