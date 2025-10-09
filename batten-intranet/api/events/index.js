@@ -71,6 +71,19 @@ module.exports = async function (context, req) {
   }
 };
 
+function decodeHtmlEntities(text) {
+  if (!text) return text;
+  return text
+    .replace(/&quot;/g, '"')
+    .replace(/&#34;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#(\d+);/g, (match, dec) => String.fromCharCode(dec));
+}
+
 function parseICS(icsData) {
   try {
     const jcalData = ICAL.parse(icsData);
@@ -80,11 +93,11 @@ function parseICS(icsData) {
     return vevents.map(vevent => {
       const event = new ICAL.Event(vevent);
       return {
-        title: event.summary,
+        title: decodeHtmlEntities(event.summary),
         start: event.startDate.toJSDate().toISOString(),
         end: event.endDate ? event.endDate.toJSDate().toISOString() : null,
-        location: event.location || '',
-        description: event.description || ''
+        location: decodeHtmlEntities(event.location || ''),
+        description: decodeHtmlEntities(event.description || '')
       };
     });
   } catch (error) {
