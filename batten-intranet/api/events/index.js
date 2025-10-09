@@ -5,20 +5,28 @@ module.exports = async function (context, req) {
   context.log('Fetching events from Trumba calendars');
 
   try {
-    // Trumba calendar URL (ICS format)
+    // Trumba calendar URLs (ICS format)
     // Note: Replace webcal:// with https:// for proper fetching
+    const UPCOMING_EVENTS_URL = 'https://www.trumba.com/calendars/batten-school-events.ics';
     const KEY_DATES_URL = 'https://www.trumba.com/calendars/fbs-key-dates.ics';
 
-    // Fetch key dates calendar
-    const keyDatesResponse = await fetch(KEY_DATES_URL);
+    // Fetch both calendars in parallel
+    const [upcomingEventsResponse, keyDatesResponse] = await Promise.all([
+      fetch(UPCOMING_EVENTS_URL),
+      fetch(KEY_DATES_URL)
+    ]);
 
-    if (!keyDatesResponse.ok) {
+    if (!upcomingEventsResponse.ok || !keyDatesResponse.ok) {
       throw new Error('Failed to fetch calendar data');
     }
 
-    const keyDatesText = await keyDatesResponse.text();
+    const [upcomingEventsText, keyDatesText] = await Promise.all([
+      upcomingEventsResponse.text(),
+      keyDatesResponse.text()
+    ]);
 
     // Parse ICS data
+    const upcomingEvents = parseICS(upcomingEventsText);
     const keyDates = parseICS(keyDatesText);
 
     // Filter to only future events and limit to next 30 days
@@ -42,7 +50,7 @@ module.exports = async function (context, req) {
         'Cache-Control': 'public, max-age=3600' // Cache for 1 hour
       },
       body: {
-        upcomingEvents: filterEvents(keyDates), // Using same calendar for both for now
+        upcomingEvents: filterEvents(upcomingEvents),
         keyDates: filterEvents(keyDates)
       }
     };
